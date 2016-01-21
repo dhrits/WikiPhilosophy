@@ -63,15 +63,17 @@ def not_infobox(link):
 
 def not_parenthesized(link):
     idx = link.parent().text().find(link.text())
-    count = 0
+    stack = []
     for i, c in enumerate(link.parent().text()):
         if i >= idx:
             break
         if c == '(':
-            count += 1
+            stack.append('(')
         elif c == ')':
-            count -= 1
-    if count != 0:
+            if not stack:
+                return False
+            stack.pop()
+    if stack:
         return False
     return True
 

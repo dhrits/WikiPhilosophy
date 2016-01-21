@@ -1,6 +1,7 @@
-## Paths to Philosophy Analyzes wikipedia pages following the first
-link in the body of the page which is not parenthesized and
-italisized. This process continues till the Philosophy page is reached
+## Paths to Philosophy
+Analyzes wikipedia pages following the first link in the body of the
+page which is not parenthesized and italisized. This process continues
+till the Philosophy page is reached
 (http://wikipedia.org/Philosophy). The code applies a large number of
 heuristics to identify "first link in the body" of the page. These
 heuristics are configurable and can be replaced by another list of
